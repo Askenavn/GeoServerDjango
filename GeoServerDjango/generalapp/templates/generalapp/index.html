@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>GeoServerDjango</title>
+</head>
+<body>
+    <form class="form-inline my-2 my-lg-0" action="{% url 'home' %}"><br /><br />
+        First method: <input class="form-control mr-sm-2" placeholder="GeonameID" type="search" name="geonameid"/>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Show</button>
+        <br />
+    </form>
+    <form class="form-inline my-1 my-lg-0" action="{% url 'home' %}"><br /><br />
+        Second method: <input class="form-control mr-sm-1" placeholder="Page" type="search" name="page"/>
+        <input class="form-control mr-sm-1" placeholder="Items" type="search" name="items_on_page"/>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Show</button>
+        <br />
+    </form>
+    <form class="form-inline my-1 my-lg-0" action="{% url 'home' %}"><br /><br />
+        Third method: <input class="form-control mr-sm-1" placeholder="First city name" type="search" name="fstcity"/>
+        <input class="form-control mr-sm-1" placeholder="Second city name" type="search" name="sndcity"/>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Show</button>
+        <br />
+    </form>
+</body>
+</html>
